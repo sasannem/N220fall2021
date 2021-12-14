@@ -1,11 +1,8 @@
 let dvNumber = document.getElementById("dvNumber");
 
-let randNumber
-function makeRandom(){
-randNumber = random(1, 10);
-console.log(randNumber);
-}
 
-function randomNumber(){
-    dvNumber.innerHtml = randNumber;
+function makeRandom(){
+    let randNumber = Math.floor(Math.random() * 10 + 1);
+
+    dvNumber.innerHTML = randNumber;
 }
